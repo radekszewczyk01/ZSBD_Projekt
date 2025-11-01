@@ -1,0 +1,12 @@
+IA.doi <-> IW.OriginalPaperDOI
+IA.title <-> IW.title
+IA.subject <-> IW.ArticleType
+
+Article                 Research Article (lub Article)
+Book chapter            Book Chapter/Reference Work
+Conference paper        Conference Abstract/Paper
+Preprint                Preprint
+Report                  Technical Report/White Paper (lub Report)
+Book                    Book Chapter/Reference Work
+Editorial               Commentary/Editorial
+

@@ -1,0 +1,43 @@
+mysql> DESCRIBE INPUT_ARTICLE;
++--------------------+--------------+------+-----+---------+-------+
+| Field              | Type         | Null | Key | Default | Extra |
++--------------------+--------------+------+-----+---------+-------+
+| oai                | varchar(255) | YES  |     | NULL    |       |
+| title              | text         | YES  |     | NULL    |       |
+| authors            | text         | YES  |     | NULL    |       |
+| publisher          | text         | YES  |     | NULL    |       |
+| datePublished      | varchar(20)  | YES  |     | NULL    |       |
+| year               | smallint     | YES  |     | NULL    |       |
+| topics             | text         | YES  |     | NULL    |       |
+| downloadUrl        | text         | YES  |     | NULL    |       |
+| fullTextIdentifier | text         | YES  |     | NULL    |       |
+| journals           | text         | YES  |     | NULL    |       |
+| contributors       | text         | YES  |     | NULL    |       |
+| pdfHashValue       | varchar(255) | YES  |     | NULL    |       |
+| language           | text         | YES  |     | NULL    |       |
+| relations          | text         | YES  |     | NULL    |       |
++--------------------+--------------+------+-----+---------+-------+
+17 rows in set (0.00 sec)
+
+mysql> DESCRIBE INPUT_WITHDRAWN;
++-----------------------+--------------+------+-----+---------+-------+
+| Field                 | Type         | Null | Key | Default | Extra |
++-----------------------+--------------+------+-----+---------+-------+
+| Subject               | text         | YES  |     | NULL    |       |
+| Institution           | text         | YES  |     | NULL    |       |
+| Journal               | text         | YES  |     | NULL    |       |
+| Publisher             | text         | YES  |     | NULL    |       |
+| Country               | text         | YES  |     | NULL    |       |
+| Author                | text         | YES  |     | NULL    |       |
+| URLS                  | text         | YES  |     | NULL    |       |
+| RetractionDate        | varchar(50)  | YES  |     | NULL    |       |
+| RetractionDOI         | varchar(255) | YES  |     | NULL    |       |
+| RetractionPubMedID    | bigint       | YES  |     | NULL    |       |
+| OriginalPaperDate     | varchar(50)  | YES  |     | NULL    |       |
+| OriginalPaperDOI      | varchar(255) | YES  |     | NULL    |       |
+| OriginalPaperPubMedID | bigint       | YES  |     | NULL    |       |
+| RetractionNature      | varchar(255) | YES  |     | NULL    |       |
+| Reason                | text         | YES  |     | NULL    |       |
+| Paywalled             | varchar(10)  | YES  |     | NULL    |       |
+| Notes                 | text         | YES  |     | NULL    |       |
++-----------------------+--------------+------+-----+---------+-------+
