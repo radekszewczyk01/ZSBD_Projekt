@@ -6,4 +6,4 @@
 	- Rozwiązanie: serwer `local_infile=1` (SET GLOBAL/PERSIST lub w my.cnf + restart), klient: mysql CLI z `--local-infile=1`.
 
 - Klient Node (v2.0) wymaga `streamFactory`/`infileStreamFactory` (ReadStream) dla `LOAD DATA LOCAL INFILE`.
-	- Rozwiązanie: użyto mysql CLI (nie wymaga streamFactory). Alternatywnie w Node (mysql2): `localInfile: true` + `infileStreamFactory: (p)=>fs.createReadStream(p)`.
+	- Rozwiązanie: użyto mysql CLI (nie wymaga streamFactory).

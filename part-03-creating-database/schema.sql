@@ -58,7 +58,6 @@ CREATE TABLE IF NOT EXISTS TypFinansowania_Slownik (
     nazwa_typu VARCHAR(100) UNIQUE NOT NULL
 );
 
--- Przykładowe dane, które możesz dodać
 INSERT INTO TypFinansowania_Slownik (nazwa_typu) VALUES
 ('Grant rządowy'),
 ('Grant komercyjny'),
@@ -188,6 +187,7 @@ CREATE TABLE IF NOT EXISTS Artykul_Autor_Afiliacja (
         ON UPDATE CASCADE ON DELETE RESTRICT 
 );
 
+-- 10. Cytowanie artykułów
 CREATE TABLE IF NOT EXISTS Cytowanie (
   id_cytowania INT PRIMARY KEY AUTO_INCREMENT,
   id_cytujacego INT,

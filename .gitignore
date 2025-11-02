@@ -1,2 +1,5 @@
 input-data/*
 .vscode/*
+venv/*
+venv
+part-04-generating-records/python_subscripts/__pycache__
