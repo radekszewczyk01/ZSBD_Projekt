@@ -1,3 +1,5 @@
+-- - jako root
+
 -- Krok 1: Daj rpc_admin pełną kontrolę NAD BAZĄ DANYCH 'rpc'
 -- (włącznie z prawem do nadawania tych uprawnień innym, czyli WITH GRANT OPTION)
 GRANT ALL PRIVILEGES ON rpc.* TO 'rpc_admin'@'localhost' WITH GRANT OPTION;
