@@ -1,0 +1,1 @@
+GRANT EXECUTE ON PROCEDURE rims_v2.sp_PobierzAutorowDlaDyscypliny TO 'RolaAutora';
