@@ -16,3 +16,28 @@ CREATE TABLE IF NOT EXISTS Zgloszenie_Wstepne (
     FOREIGN KEY (id_czasopisma_docelowego) REFERENCES Czasopismo(id_czasopisma),
     FOREIGN KEY (id_przypisanego_asystenta) REFERENCES Asystent_Czasopisma(id_asystenta)
 );
+
+-- 1. Tabela łącząca zgłoszenie z proponowanymi autorami
+CREATE TABLE IF NOT EXISTS Zgloszenie_Wstepne_Autor (
+    id_zgloszenia INT NOT NULL,
+    id_autora INT NOT NULL,
+    kolejnosc_autora INT,
+    PRIMARY KEY (id_zgloszenia, id_autora),
+    FOREIGN KEY (id_zgloszenia) 
+        REFERENCES Zgloszenie_Wstepne(id_zgloszenia) 
+        ON DELETE CASCADE,
+    FOREIGN KEY (id_autora) 
+        REFERENCES Autor(id_autora)
+);
+
+-- 2. Tabela łącząca zgłoszenie z proponowanymi dyscyplinami
+CREATE TABLE IF NOT EXISTS Zgloszenie_Wstepne_Dyscyplina (
+    id_zgloszenia INT NOT NULL,
+    id_dyscypliny INT NOT NULL,
+    PRIMARY KEY (id_zgloszenia, id_dyscypliny),
+    FOREIGN KEY (id_zgloszenia) 
+        REFERENCES Zgloszenie_Wstepne(id_zgloszenia) 
+        ON DELETE CASCADE,
+    FOREIGN KEY (id_dyscypliny) 
+        REFERENCES Dyscypliny(id_dyscypliny)
+);
