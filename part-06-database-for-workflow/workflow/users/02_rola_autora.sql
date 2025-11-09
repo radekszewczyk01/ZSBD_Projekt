@@ -9,3 +9,5 @@ GRANT SELECT ON rims_v2.Perspektywa_Nazwy_Dyscyplin TO 'RolaAutora';
 GRANT EXECUTE ON PROCEDURE rims_v2.sp_PobierzMojeSpecjalizacje TO 'RolaAutora';
 GRANT EXECUTE ON PROCEDURE rims_v2.sp_PobierzWszystkieMojeArtykuly TO 'RolaAutora';
 GRANT EXECUTE ON PROCEDURE rims_v2.sp_PobierzAutorowDlaDyscypliny TO 'RolaAutora';
+GRANT EXECUTE ON PROCEDURE rims_v2.sp_Autor_ZglosArtykul TO 'RolaAutora';
+GRANT EXECUTE ON PROCEDURE rims_v2.sp_Autor_Demo_ZglosDoCzasopisma TO 'RolaAutora';

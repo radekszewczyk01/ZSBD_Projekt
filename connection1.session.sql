@@ -12,3 +12,6 @@ WHERE
 
 
 DROP PROCEDURE IF EXISTS sp_PobierzWszystkieMojeArtykuly;
+
+
+CALL sp_Autor_Demo_ZglosDoCzasopisma('Journal of Out Forget');
