@@ -1,7 +1,3 @@
-CREATE TABLE Czasopismo_Punkty_Roczne (
-    id_czasopisma INT NOT NULL,
-    rok INT NOT NULL,
-    punkty_mein INT,
-    PRIMARY KEY (id_czasopisma, rok),
-    FOREIGN KEY (id_czasopisma) REFERENCES Czasopismo(id_czasopisma)
-);
+SELECT id_artykulu, tytul, doi, rok_publikacji 
+FROM Perspektywa_Opublikowane_Artykuly
+LIMIT 10;

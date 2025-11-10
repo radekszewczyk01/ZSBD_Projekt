@@ -20,3 +20,22 @@ CALL sp_Autor_Demo_ZglosDoCzasopisma_Poprawne('Journal of Out Forget');
 SELECT rims_v2.fn_SprawdzZgodnoscDyscyplin(3) AS 'Wynik_Kontroli';
 
 CALL sp_Asystent_AkceptujZgloszenie(5);
+
+
+-- Sprawdź, obecny stan tabeli artykyułów
+
+SELECT * FROM Artykul
+ORDER BY id_artykulu DESC
+LIMIT 3;
+
+
+SELECT * FROM RundaRecenzyjna
+ORDER BY id_artykulu DESC
+LIMIT 3;
+
+
+-- jako redaktor naczelny krystyna
+
+SELECT id_artykulu, Aktualny_Status, ID_Ostatniej_Rundy, ID_Redaktora_Prowadzacego  FROM Perspektywa_Naczelnego_Artykuly_W_Systemie ORDER BY id_artykulu DESC LIMIT 3;
+CALL sp_Naczelny_PrzypiszRedaktoraDoRundy(21980, 1);
+
