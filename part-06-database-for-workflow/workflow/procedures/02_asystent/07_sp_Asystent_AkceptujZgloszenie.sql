@@ -81,6 +81,3 @@ BEGIN
 END$$
 
 DELIMITER ;
-
--- Krok 5: Nadaj asystentowi prawo do akceptacji (bez zmian)
-GRANT EXECUTE ON PROCEDURE rims_v2.sp_Asystent_AkceptujZgloszenie TO 'RolaAsystenta';

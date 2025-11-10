@@ -11,3 +11,4 @@ GRANT EXECUTE ON PROCEDURE rims_v2.sp_PobierzWszystkieMojeArtykuly TO 'RolaAutor
 GRANT EXECUTE ON PROCEDURE rims_v2.sp_PobierzAutorowDlaDyscypliny TO 'RolaAutora';
 GRANT EXECUTE ON PROCEDURE rims_v2.sp_Autor_ZglosArtykul TO 'RolaAutora';
 GRANT EXECUTE ON PROCEDURE rims_v2.sp_Autor_Demo_ZglosDoCzasopisma TO 'RolaAutora';
+GRANT EXECUTE ON PROCEDURE rims_v2.sp_Autor_Demo_ZglosDoCzasopisma_Poprawne TO 'RolaAutora';

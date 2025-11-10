@@ -13,5 +13,10 @@ WHERE
 
 DROP PROCEDURE IF EXISTS sp_PobierzWszystkieMojeArtykuly;
 
-
+-- jako olaf
 CALL sp_Autor_Demo_ZglosDoCzasopisma('Journal of Out Forget');
+CALL sp_Autor_Demo_ZglosDoCzasopisma_Poprawne('Journal of Out Forget');
+-- jako anita
+SELECT rims_v2.fn_SprawdzZgodnoscDyscyplin(3) AS 'Wynik_Kontroli';
+
+CALL sp_Asystent_AkceptujZgloszenie(5);

@@ -5,7 +5,8 @@ CREATE ROLE IF NOT EXISTS 'RolaAsystenta';
 
 GRANT SELECT ON rims_v2.Perspektywa_Biblioteka TO 'RolaAsystenta';
 GRANT SELECT ON rims_v2.Perspektywa_Kolejka_Asystenta TO 'RolaAsystenta';
-
+GRANT EXECUTE ON FUNCTION rims_v2.fn_SprawdzZgodnoscDyscyplin TO 'RolaAsystenta';
+GRANT EXECUTE ON PROCEDURE rims_v2.sp_Asystent_AkceptujZgloszenie TO 'RolaAsystenta';
 -- Prawo do akceptowania zgłoszeń (przenoszenia do Artykul)
 -- GRANT EXECUTE ON PROCEDURE rims_v2.sp_Asystent_AkceptujZgloszenie TO 'RolaAsystenta';
 
