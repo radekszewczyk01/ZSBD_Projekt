@@ -12,3 +12,5 @@ GRANT EXECUTE ON PROCEDURE rims_v2.sp_PobierzAutorowDlaDyscypliny TO 'RolaAutora
 GRANT EXECUTE ON PROCEDURE rims_v2.sp_Autor_ZglosArtykul TO 'RolaAutora';
 GRANT EXECUTE ON PROCEDURE rims_v2.sp_Autor_Demo_ZglosDoCzasopisma TO 'RolaAutora';
 GRANT EXECUTE ON PROCEDURE rims_v2.sp_Autor_Demo_ZglosDoCzasopisma_Poprawne TO 'RolaAutora';
+GRANT SELECT ON rims_v2.Perspektywa_Recenzenta_Moje_Zadania TO 'RolaAutora';
+GRANT EXECUTE ON PROCEDURE rims_v2.sp_Recenzent_PrzeslijRecenzje TO 'RolaAutora';

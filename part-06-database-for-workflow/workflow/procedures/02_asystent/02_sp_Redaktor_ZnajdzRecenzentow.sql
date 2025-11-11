@@ -41,13 +41,14 @@ BEGIN
     -- --- KONIEC BLOKU ZABEZPIECZAJĄCEGO ---
 
 
-    -- Krok 5: (Oryginalna logika) Pokaż autorów, którzy nie są autorami tego artykułu
+    -- Krok 5: (Oryginalna logika) Pokaż autorów...
     SELECT DISTINCT
         a.id_autora,
         a.imie,
         a.nazwisko,
         a.orcid,
-        d.nazwa_dyscypliny AS 'Pasujaca_Dyscyplina'
+        -- POPRAWKA JEST TUTAJ:
+        d.nazwa AS 'Pasujaca_Dyscyplina'
     FROM Autor a
     -- Znajdź ich dyscypliny
     JOIN Autor_Dyscyplina ad ON a.id_autora = ad.id_autora
@@ -64,4 +65,5 @@ BEGIN
 END$$
 DELIMITER ;
 
--- Nadaj uprawnienia Redaktorom (RolaAsystenta) - to polecenie jest OK
+-- Nadaj uprawnienia Redaktorom (RolaAsystenta)
+GRANT EXECUTE ON PROCEDURE rims_v2.sp_Redaktor_ZnajdzRecenzentow TO 'RolaAsystenta';
