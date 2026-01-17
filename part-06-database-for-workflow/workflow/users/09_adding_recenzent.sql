@@ -1,0 +1,1 @@
+CALL sp_StworzUzytkownikaAutora('author_lukasz_1', 'SilneHasloOlaf123!', 7);
