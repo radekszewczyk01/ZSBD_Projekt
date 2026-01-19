@@ -618,9 +618,9 @@ if __name__ == "__main__":
     
     # --- ZMIEŃ TE WARTOŚCI ---
     DB_HOST = "localhost"
-    DB_USER = "nowy_admin"      # Użytkownik, którego stworzyłeś
-    DB_PASSWORD = "SilneHaslo123!" # Hasło dla tego użytkownika
-    DB_NAME = "rims_v2"            # Nazwa Twojej bazy danych
+    DB_USER = "rpc_admin"      # Updated to match setup script
+    DB_PASSWORD = "Silnehaslo123." # Updated to match setup script (dot at end)
+    DB_NAME = "rpc"            # Updated to match setup script
     # ---------------------------
 
     db = None

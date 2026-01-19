@@ -11,5 +11,5 @@ JOIN Artykul a ON rr.id_artykulu = a.id_artykulu
 JOIN Decyzja_Slownik ds ON rr.id_decyzji = ds.id_decyzji
 WHERE
     -- Kluczowy warunek: Jestem przypisany do tej rundy
-    rr.id_redaktora_prowadzacego = (SELECT id_autora FROM mapowanie_uzytkownik_autor WHERE nazwa_uzytkownika = USER())
+    rr.id_redaktora_prowadzacego = (SELECT id_autora FROM Mapowanie_Uzytkownik_Autor WHERE nazwa_uzytkownika_db = USER())
     AND rr.data_zakonczenia IS NULL;
